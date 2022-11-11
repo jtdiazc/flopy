@@ -1585,7 +1585,7 @@ def export_array(
             "nodata": nodata,
             "dtype": dtype,
             "driver": "GTiff",
-            "crs": modelgrid.proj4,
+            "crs": modelgrid.proj4.upper(),
             "transform": trans,
         }
         meta.update(kwargs)
